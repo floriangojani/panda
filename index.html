@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panda | E-commerce Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/573ac93bf9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!--<h2 tabindex="-1" id="link-down-the-page"></h2>-->
+
+<div class="header">
+    <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/pandaa.png" width="125px"></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+        <ul>
+        <li class="cart">
+            <a href="#"><img src="images/cart.png" width="30px" height="30px" onclick="showAlert()"></a>
+        </li>
+        </ul>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+    <div class="row">
+        <div class="col-2">
+            <h1>Better Clothes<br> Better Choices!</h1>
+            <p>Make Sure ur Style is as cute as this panda!<br> This panda will be sad if nothing is purchased!</p>
+            <!-- <a href="" class="btn">Explore Now &#8594;</a> -->
+        </div>
+        <div class="col-2">
+            <img src="images/panda.png">
+        </div>
+        </div>
+    </div>
+</div>
+<!-------- featured categories--------->
+<div class="categories">
+    <div class="small-container">
+    <div class="row">
+        <div class="col-3">
+            <img src="images/category-1.jpg">
+        </div>
+        <div class="col-3">
+            <img src="images/category-2.jpg">
+        </div>
+        <div class="col-3">
+            <img src="images/category-3.jpg">
+        </div>
+    </div>
+</div>
+</div>
+<!-------- featured products--------->
+<div class="small-container">
+    <h2 class="title">Featured Products</h2>
+    <div class="row">
+        <div class="col-4">
+           <a href="Jordan-Hoodie.html"><img src="img/JordanHoodie1.jpg"></a>
+            <h4>Jordan Sport DNA Jacket</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>$150.00</p>
+        </div>
+        <div class="col-4">
+            <a href="Air-Force-1.html"><img src="img/airforce.jpg"></a>
+            <h4>Nike Air Force 1 '07</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <p>$80.00</p>
+        </div>
+        <div class="col-4">
+            <a href="Hoodie1.html"><img src="img/nikehoodie.jpg"></a>
+            <h4>Nike Sportswear Fleece</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+        <div class="col-4">
+            <a href="Bluejoggers.html"><img src="img/joggers.jpg"></a>
+            <h4>Nike Sportswear Club Fleece+</h4>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>$65.00</p>
+        </div>
+        <h2 class="title">Latest Products</h2>
+        <div class="row">
+            <div class="col-4">
+               <a href="Vest.html"><img src="img/jordanvest.jpg"></a>
+                <h4>Jordan 23 Engineered vest</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>$70.00</p>
+            </div>
+            <div class="col-4">
+                <a href="Puffer.html"><img src="img/puffer.jpg"></a>
+                <h4>Nike Sportswear Windrunner</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p>$110.00</p>
+            </div>
+            <div class="col-4">
+               <a href="Shorce.html"><img src="img/swimtrunks.jpg"></a>
+                <h4>Nike Shark Stripe Kids</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>$25.00</p>
+            </div>
+            <div class="col-4">
+                <a href="Shorts.html"><img src="img/drifitshorts.jpg"></a>
+                <h4>Nike Dri-FIT Shorts</h4>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>$35.00</p>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <a href="Widepants.html"><img src="img/widepants.jpg"></a>
+                    <h4>Nike Sportswear</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>$65.00</p>
+                </div>
+                <div class="col-4">
+                    <a href="Airmax.html"><img src="img/airmax.jpg"></a>
+                    <h4>Nike Air Max 90</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>$130.00</p>
+                </div>
+                <div class="col-4">
+                    <a href="Jordan1.html"><img src="img/jordan1shoe.jpg"></a>
+                    <h4>Air Jordan 1 Mid SE</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>$135.00</p>
+                </div>
+                <div class="col-4">
+                    <a href="shirt.html"><img src="img/nikeshirt.jpg"></a>
+                    <h4>Nike Sportswear Essential</h4>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>$20.00</p>
+                </div>
+    </div>
+</div>
+    </div>
+</div>
+<!-----------offer---------->
+<div class="offer">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/exclusive.png" class="offer-img" >
+            </div>
+            <div class="col-2">
+                <p><b>Preorder Availible on RedStore</b></p>
+                <h1>Smart Band 4</h1>
+                <small><p>The Mi Smart Band 4 comes with an attractive full-colour AMOLED touchscreen display.The brightness levels of the display can be customized as per your convenience.<br></p></small>
+                <a href="#" class="btn" onclick="showAlertt()">Preorder</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------- testimonial ----------->
+<div class="testimonial">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <img src="images/user-1.png">
+                <h3>Leah Parker</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <img src="images/user-2.png">
+                <h3>George Cooper</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <img src="images/user-3.png">
+                <h3>Alicia Smith</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------------- brands ---------->
+<div class="brands">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-5">
+                <img src="images/logo-godrej.png">
+            </div>
+            <div class="col-5">
+                <img src="images/logo-oppo.png">
+            </div>
+            <div class="col-5">
+                <img src="images/logo-coca-cola.png">
+            </div>
+            <div class="col-5">
+                <img src="images/logo-paypal.png">
+            </div>
+            <div class="col-5">
+                <img src="images/logo-philips.png">
+            </div>
+            </div>
+            </div>
+        </div>
+<!------------ footer ----------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our app</h3>
+                <p>Download App for Android and ios mobile phone</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/pandaa.png">
+                <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accesible to the Many.</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                <li>Coupons</li>
+                <li>Blog Post</li>
+                <li>Return Policy</li>
+                <li>Join Affiliate</li>
+            </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>Youtube</li>
+            </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2022 - Florian Gojani</p>
+    </div>
+</div>
+<!------------js for toggle menu---------->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+<script>
+  function showAlert() {
+    var myText = "Add to cart feature coming soon!";
+    alert (myText);
+  }
+  function showAlertt() {
+    var myText = "Thank you for PreOrdering!";
+    alert (myText);
+  }
+</script>
+</body>
+</html>
